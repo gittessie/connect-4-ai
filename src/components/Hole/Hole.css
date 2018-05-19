@@ -1,0 +1,16 @@
+.Hole {
+    background-color: white; 
+    width: 50px;
+    height: 50px; 
+    border-radius: 100%; 
+    border: 2px solid yellow;
+    box-sizing: border-box;
+}
+
+.Red {
+    background-color: red;
+}
+
+.Black {
+    background-color: black;
+}

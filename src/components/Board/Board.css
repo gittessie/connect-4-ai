@@ -1,0 +1,14 @@
+.Board {
+    width: 364px;
+    margin: 30px auto;
+    border-bottom: 10px solid blue;
+    border-left: 5px solid white;
+    border-right: 5px solid white;
+}
+
+@media(min-width: 385px){
+    .Board {
+        border-left: 10px solid white;
+        border-right: 10px solid white;
+    }
+}
