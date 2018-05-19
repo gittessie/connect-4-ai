@@ -161,7 +161,6 @@ class App extends Component {
     }
     var bestCol = -1;
     var bestVal = -99999;
-    console.log(moveValues);
     for(var j = 0; j < moveValues.length; j++){
       if(moveValues[j] > bestVal){
         bestCol = j;
