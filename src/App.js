@@ -40,7 +40,6 @@ class App extends Component {
       if(currBoard[i][col] === currBoard[i-1][col] 
         && currBoard[i-1][col] === currBoard[i-2][col]
         && currBoard[i-2][col] === currBoard[i-3][col]){
-          //console.log("vertical win");
           return true;
       }
     }
@@ -60,7 +59,6 @@ class App extends Component {
       if(currBoard[row][i] === currBoard[row][i-1] 
         && currBoard[row][i-1] === currBoard[row][i-2]
         && currBoard[row][i-2] === currBoard[row][i-3]){
-          //console.log("horizontal win");
           return true;
       }
     }
@@ -85,7 +83,6 @@ class App extends Component {
         && currBoard[checkRow][checkCol] === currBoard[checkRow-1][checkCol-1] 
         && currBoard[checkRow-1][checkCol-1] === currBoard[checkRow-2][checkCol-2]
         && currBoard[checkRow-2][checkCol-2] === currBoard[checkRow-3][checkCol-3]){
-          //console.log("diag win");
           return true;
       }
       checkRow--;
@@ -109,7 +106,6 @@ class App extends Component {
         && currBoard[checkRow][checkCol] === currBoard[checkRow-1][checkCol+1] 
         && currBoard[checkRow-1][checkCol+1] === currBoard[checkRow-2][checkCol+2]
         && currBoard[checkRow-2][checkCol+2] === currBoard[checkRow-3][checkCol+3]){
-          //console.log("diag win");
           return true;
       }
       checkRow--;
@@ -132,7 +128,6 @@ class App extends Component {
     if(this.checkVertWin(row, col, currBoard) 
     || this.checkHorizWin(row, col, currBoard) 
     || this.checkDiagWin(row,col, currBoard)){
-      //console.log("someone won."+currBoard[row][col]);
       return currBoard[row][col];
     } else{
       if(row === 0 && this.checkBoardFull(currBoard)){
